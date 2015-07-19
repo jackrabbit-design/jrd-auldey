@@ -246,9 +246,9 @@
     h5 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
     h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 
-    .btn { background: #00A3E1; box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.30); padding:15px 40px; font:800 14px/1 Nexa; color:#fff; text-transform:uppercase; transform:skew(-19deg); display: inline-block; }
-    .btn span {  transform:skew(19deg); display: inline-block; }
-    .btn:hover { background:#D7262C; transition:all 0.15s; }
+    .btn, button[type=submit] { background: #00A3E1; box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.30); padding:15px 40px; font:800 14px/1 Nexa; color:#fff; text-transform:uppercase; transform:skew(-19deg); display: inline-block; }
+    .btn span, , button[type=submit] span {  transform:skew(19deg); display: inline-block; }
+    .btn:hover, , button[type=submit]:hover { background:#D7262C; transition:all 0.15s; }
 
     #header { height:83px; background: #1E66A3; background-image: linear-gradient(-180deg, rgba(30,102,163,0.00) 10%, rgba(21,79,139,1) 91%); box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.30); position: relative; z-index: 10;
         .header-wrap { max-width:950px; margin:0 auto;
@@ -463,8 +463,10 @@
         h2 { font:800 21px/1 Nexa; color:#1E66A3; text-transform: uppercase;}
         h1 { font:700 54px/1 Nexa; color:#EC1C23; }
         img { position:absolute; left:50%; border:6px solid #fff; box-shadow:0 15px 14px rgba(0,0,0,0.2); }
-        h3 { font:700 31px/1 Nexa; color:#1E66A3; }
-        p { font:300 19px/26px ProximaNova; color:#737373; max-width:720px; padding:0 20px; margin:0 auto; }
+        h3 { font:700 31px/1 Nexa; color:#1E66A3; margin-bottom:18px; }
+        p { font:300 19px/26px ProximaNova; color:#737373; max-width:720px; padding:0 20px; margin:0 auto;
+            a { color:#00A3E1; }
+        }
     }
 
     .callout { max-width:980px; margin:0 auto; text-align:center; padding:40px percentage(116/980); border-bottom:2px solid #E3E3E3;
@@ -553,6 +555,13 @@
         .store { display:table-cell; height:125px; vertical-align: middle; padding:0 45px; }
     }
 
+    #contact { max-width:725px; margin:0 auto; padding:46px 0 60px; font-size:0; border-bottom:1px solid #CFCFCF;
+        li { display:inline-block; width:100%; }
+        li.sm { width:48%; }
+        li.sm+li.sm { margin-left:4%; }
+        .gform_footer { text-align:center; }
+    }
+
     #footer { max-width:900px; margin:0 auto; padding:22px 0;
         .left { float:left; line-height:58px; font-size:11px; color:#737373;
             .logo { float:left; margin-right:12px;
@@ -566,6 +575,7 @@
             }
         }
     }
+
 
     .content-main {
         h3 { font:600 26px/1 Nexa; color:#1E66A3; margin-bottom:22px; }
@@ -590,14 +600,16 @@
 */
 
     form ul { margin: 0;
-        li { background: none; list-style: none;
-            div { display: inline-block; vertical-align: top; }
+        li { background: none; list-style: none; margin-bottom:24px;
+            label { font:700 15px/1 Nexa; color:#D7262C; display:block; margin-bottom:6px; text-transform:uppercase; }
+            div { display: inline-block; vertical-align: top; width:100%; }
         }
     }
 
     input {
-        &[type=text], &[type=password], &[type=url], &[type=email] {  }
+        &[type=text], &[type=password], &[type=url], &[type=email] { padding:0 16px; height:50px; font:300 16px/50px ProximaNova; color:#737373; border:1px solid #CFCFCF; width:100%; display:block; }
     }
+    textarea { padding:16px; font:300 16px/1.5 ProximaNova; color:#737373; height:160px; border:1px solid #CFCFCF; width:100%; display:block; }
 
     input[type=submit], button { display: inline-block; cursor: pointer;
         &:hover {  }
