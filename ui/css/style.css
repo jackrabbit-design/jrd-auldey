@@ -359,6 +359,8 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #title h2 { font: 800 21px/1 Nexa; color: #1E66A3; text-transform: uppercase; }
 #title h1 { font: 700 54px/1 Nexa; color: #EC1C23; }
 #title img { position: absolute; left: 50%; border: 6px solid #fff; box-shadow: 0 15px 14px rgba(0, 0, 0, 0.2); }
+#title h3 { font: 700 31px/1 Nexa; color: #1E66A3; }
+#title p { font: 300 19px/26px ProximaNova; color: #737373; max-width: 720px; padding: 0 20px; margin: 0 auto; }
 
 .callout { max-width: 980px; margin: 0 auto; text-align: center; padding: 40px 11.83673%; border-bottom: 2px solid #E3E3E3; }
 .callout h3 { color: #1E66A3; font: 700 31px/1 Nexa; text-transform: uppercase; margin-bottom: 21px; }
