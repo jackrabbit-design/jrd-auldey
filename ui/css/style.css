@@ -253,11 +253,6 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #brand-grid .brand.big:after { visibility: visible; top: 5px; bottom: 5px; left: 9px; right: 8px; }
 
 #videos { text-align: center; max-width: 1080px; margin: 0 auto; font-size: 0; }
-#videos > h3 { font: 800 22px/1 Nexa; color: #1E66A3; text-transform: uppercase; margin-bottom: 5px; }
-#videos > h2 { font: 800 55px/1 Nexa; color: #DE1A22; text-transform: uppercase; display: inline-block; position: relative; margin-bottom: 30px; }
-#videos > h2:before, #videos > h2:after { background: #CFCFCF; display: block; width: 45px; height: 3px; content: ''; position: absolute; top: 20px; }
-#videos > h2:before { left: -110px; }
-#videos > h2:after { right: -110px; }
 #videos .video { overflow: hidden; display: block; position: relative; box-shadow: 0 8px 8px rgba(112, 112, 112, 0.5); }
 #videos .video h3 { color: #fff; margin-top: 5px; }
 #videos .video .light, #videos .video .dark { display: block; position: absolute; left: 50%; -webkit-transition: all 0.2s; transition: all 0.2s; }
@@ -392,12 +387,14 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #product .gallery .gallery-small span { float: left; display: block; width: 78px; height: 78px; background-repeat: no-repeat; box-shadow: inset 0 0 0 1px #CFCFCF; }
 #product .gallery .gallery-small span.x { box-shadow: inset 0 0 0 3px #00A3E1; }
 
-#demo { background: #E9E9EA; padding: 60px 0; text-align: center; }
-#demo > h3 { font: 800 22px/1 Nexa; color: #1E66A3; text-transform: uppercase; margin-bottom: 5px; }
-#demo > h2 { font: 800 55px/1 Nexa; color: #DE1A22; text-transform: uppercase; display: inline-block; position: relative; margin-bottom: 30px; }
-#demo > h2:before, #demo > h2:after { background: #CFCFCF; display: block; width: 45px; height: 3px; content: ''; position: absolute; top: 20px; }
-#demo > h2:before { left: -110px; }
-#demo > h2:after { right: -110px; }
+#videos, #demo, #more-toys { text-align: center; }
+#videos > h3, #demo > h3, #more-toys > h3 { font: 800 22px/1 Nexa; color: #1E66A3; text-transform: uppercase; margin-bottom: 5px; }
+#videos > h2, #demo > h2, #more-toys > h2 { font: 800 55px/1 Nexa; color: #DE1A22; text-transform: uppercase; display: inline-block; position: relative; margin-bottom: 30px; }
+#videos > h2:before, #videos > h2:after, #demo > h2:before, #demo > h2:after, #more-toys > h2:before, #more-toys > h2:after { background: #CFCFCF; display: block; width: 45px; height: 3px; content: ''; position: absolute; top: 20px; }
+#videos > h2:before, #demo > h2:before, #more-toys > h2:before { left: -110px; }
+#videos > h2:after, #demo > h2:after, #more-toys > h2:after { right: -110px; }
+
+#demo { background: #E9E9EA; padding: 60px 0; }
 #demo .video { overflow: hidden; display: block; position: relative; box-shadow: 0 8px 8px rgba(112, 112, 112, 0.5); width: 805px; height: 477px; margin: 0 auto 55px; }
 #demo .video h3 { color: #fff; margin-top: 5px; }
 #demo .video .light, #demo .video .dark { display: block; position: absolute; left: 50%; -webkit-transition: all 0.2s; transition: all 0.2s; }
@@ -412,6 +409,18 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #demo .video:hover .dark { -webkit-transform: rotate(-6deg); -ms-transform: rotate(-6deg); transform: rotate(-6deg); }
 #demo .video .play { width: 102px; height: 102px; display: block; background: url(../images/play-arrow.png) 0px top; top: 50%; left: 50%; margin-top: -51px; margin-left: -51px; position: absolute; }
 #demo .video:hover .play { background-position: -102px top; }
+
+#more-toys { padding: 60px 0; max-width: 980px; margin: 0 auto; border-bottom: 1px solid #CFCFCF; }
+#more-toys .toys { font-size: 0; margin-bottom: 60px; }
+#more-toys .toys .toy { width: 33%; padding: 30px; display: inline-block; vertical-align: top; }
+#more-toys .toys .toy + .toy { border-left: 1px solid #D8D8D8; }
+#more-toys .toys .toy img { display: block; margin: 0 auto; margin-bottom: 50px; }
+#more-toys .toys .toy h4 { font: 700 18px/1 Nexa; color: #1E66A3; }
+
+#purchase { max-width: 980px; margin: 0 auto; text-align: center; padding: 55px 0; border-bottom: 1px solid #CFCFCF; }
+#purchase h4 { font: 26px/1 Nexa; color: #1E66A3; margin-bottom: 50px; }
+#purchase .stores { display: table; margin: 0 auto; }
+#purchase .store { display: table-cell; height: 125px; vertical-align: middle; padding: 0 45px; }
 
 #footer { max-width: 900px; margin: 0 auto; padding: 22px 0; }
 #footer .left { float: left; line-height: 58px; font-size: 11px; color: #737373; }
