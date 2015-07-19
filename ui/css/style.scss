@@ -483,6 +483,60 @@
         }
     }
 
+    #faqs { max-width:980px; margin:0 auto;
+        .faq { border-bottom:1px solid #CFCFCF;
+            .q { padding:25px 0 27px 70px; color:#1E66A3; font:700 26px/1 Nexa; position: relative;
+                &:before { content:'+'; font:500 45px/1 Nexa; color:#C1C1C1; position:absolute; left:20px; top:15px; transition:transform 0.15s; }
+                &:hover { cursor:pointer;
+                    &:before { color:#00A3E1; }
+                }
+                &.x { color:#D7262C;
+                    &:before { transform:rotate(315deg); }
+                }
+            }
+            .a { padding:0 0 8px 70px; display:none;
+                p { font-size:18px; line-height:26px; }
+            }
+        }
+    }
+
+    #product { max-width:980px; margin:0 auto;
+        .content-main { width:40.8%; float:right; padding:40px 0; }
+        .gallery { width:53.5%; float:left; padding:40px 0;
+            .gallery-small { margin-top:65px;
+                span { float:left; display:block; width:78px; height:78px; background-repeat:no-repeat; box-shadow:inset 0 0 0 1px #CFCFCF;
+                    &.x { box-shadow:inset 0 0 0 3px #00A3E1; }
+                }
+            }
+        }
+    }
+
+    #demo { background:#E9E9EA; padding:60px 0; text-align:center;
+        >h3 { font:800 22px/1 Nexa; color:#1E66A3; text-transform: uppercase; margin-bottom:5px; }
+        >h2 { font:800 55px/1 Nexa; color:#DE1A22; text-transform: uppercase; display:inline-block; position: relative; margin-bottom:30px;
+            &:before, &:after { background:#CFCFCF; display:block; width:45px; height:3px; content:''; position:absolute; top:20px; }
+            &:before { left:-110px; }
+            &:after { right:-110px; }
+        }
+        .video { overflow:hidden; display:block; position: relative; box-shadow:0 8px 8px rgba(112,112,112,0.5); width:805px; height:477px; margin:0 auto 55px;
+            h3 { color:#fff; margin-top:5px; }
+            .light, .dark { display:block; position: absolute; left:50%; transition:all 0.2s; }
+
+            .text { position: absolute; z-index:5; bottom:0; left:0; width:100%; }
+            img { width:805px; height:477px; display:block; transform-origin:center center; }
+            .light { bottom:-46px; margin-left:-450px; width:900px; height:150px; background:#EC1C24; transform:rotate(3deg); }
+            .dark { bottom:-60px; margin-left:-450px; width:900px; height:75px; background:#DE1A22; transform:rotate(-3deg); }
+            .text { padding:0 35px 8px; height:90px; text-align:left; }
+            h4 { font:500 14px/1 Nexa; color:#F69498; text-transform: uppercase; transition:color 0.2s; }
+            h3 { font: 700 27px/1 Nexa; padding-right:240px }
+            &:hover {
+                .light {  transform:rotate(6deg); }
+                .dark {  transform:rotate(-6deg); }
+            }
+            .play { width:102px; height:102px; display:block; background:url(../images/play-arrow.png) 0px top; top:50%; left:50%; margin-top:-51px; margin-left:-51px; position: absolute;}
+            &:hover .play { background-position:-102px top; }
+        }
+    }
 
     #footer { max-width:900px; margin:0 auto; padding:22px 0;
         .left { float:left; line-height:58px; font-size:11px; color:#737373;
@@ -502,9 +556,9 @@
         h3 { font:600 26px/1 Nexa; color:#1E66A3; margin-bottom:22px; }
         h4 { font:700 16px/1 Nexa; color:#D7262C; text-transform: uppercase; margin-bottom:24px; margin-top:46px; }
         p { font:300 17px/28px ProximaNova; color:#737373; margin-bottom:15px; }
-        ul { }
-        ul li { position: relative; padding-left: 10px; }
-        ul li:before { content: '•'; position: absolute; left: 0; }
+        ul { padding:10px 0 40px; }
+        ul li { position: relative; padding-left: 20px; font:500 16px/17px ProximaNova; color:#737373; margin-bottom:12px; }
+        ul li:before { content: ''; position: absolute; left: 0; display:block; width:6px; height:6px; background:#D8D8D8; top:6px; }
         ol { counter-reset:li;}
         ol li { position: relative; padding-left: 20px; }
         ol li:before { content:counter(li) '. '; counter-increment: li; position: absolute; left: 0; }

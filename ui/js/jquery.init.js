@@ -43,6 +43,15 @@ jQuery(function($){
         $(this).parents('.slide').children('.popup').toggleClass('active').siblings('img').toggleClass('active');
     });
 
+    $('.faq .q').on('click', function(){
+        $(this).toggleClass('x').siblings('.a').slideToggle(150);
+    });
+
+    $('.gallery-small span').on('click',function(){
+        $(this).addClass('x').siblings('.x').removeClass('x');
+        $('.gallery img').attr('src',$(this).data('big'));
+    });
+
     // PARALLAX
 /*
     $(document).scroll(function(){
