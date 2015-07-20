@@ -2,21 +2,24 @@
 /* BE SURE TO COMMENT CODE/IDENTIFY PER PLUGIN CALL */
 /* ========================================================================= */
 
-jQuery(function($){
-
+function _brandGrid(){
     $('#brand-grid .brand').hover(function(){
         $(this).addClass('big').siblings('.brand').addClass('small');
     },function(){
         $('.brand').removeClass('big').removeClass('small');
     });
+}
 
+function _banner(){
     $('#banner').owlCarousel({
         items: 1,
         nav: true,
         loop: true,
         navText: ['&#x25c0;','&#x25b6']
     });
+}
 
+function _toySlider(){
     $('#toys-slider').owlCarousel({
         stagePadding: 1,
         loop:true,
@@ -42,35 +45,37 @@ jQuery(function($){
     $('.popup .expand, #toys-slider img').on('click',function(){
         $(this).parents('.slide').children('.popup').toggleClass('active').siblings('img').toggleClass('active');
     });
+}
 
+function _brandSlider(){
+    $('#brand-slides').owlCarousel({
+        loop:true,
+        nav:true,
+        navText: ['&#x25c0;','&#x25b6'],
+        items: 1
+    });
+}
+
+function _faq(){
     $('.faq .q').on('click', function(){
         $(this).toggleClass('x').siblings('.a').slideToggle(150);
     });
+}
 
+function _gallery(){
     $('.gallery-small span').on('click',function(){
         $(this).addClass('x').siblings('.x').removeClass('x');
         $('.gallery img').attr('src',$(this).data('big'));
     });
+}
 
-    // PARALLAX
-/*
-    $(document).scroll(function(){
-        var nm = $("html").scrollTop();
-        var nw = $("body").scrollTop();
-        var n = (nm > nw ? nm : nw);
+jQuery(function(){
 
-        $('#element').css({
-            'webkitTransform' : 'translate3d(0, ' + n + 'px, 0)',
-            'MozTransform'    : 'translate3d(0, ' + n + 'px, 0)',
-            'msTransform'     : 'translateY('     + n + 'px)',
-            'OTransform'      : 'translate3d(0, ' + n + 'px, 0)',
-            'transform'       : 'translate3d(0, ' + n + 'px, 0)',
-        });
-
-        // if transform3d isn't available, use top over background-position
-        //$('#element').css('top', Math.ceil(n/2) + 'px');
-
-    });
-*/
+    _brandGrid();
+    _banner();
+    _toySlider();
+    _brandSlider();
+    _faq();
+    _gallery();
 
 });

@@ -431,6 +431,16 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #contact li.sm + li.sm { margin-left: 4%; }
 #contact .gform_footer { text-align: center; }
 
+#brand-slider { height: 565px; background: url("../images/bg-brand.jpg") no-repeat center top; padding: 45px 0; position: relative; }
+#brand-slider #brand-slides { width: 936px; height: 435px; box-shadow: 0 15px 14px rgba(0, 0, 0, 0.5); border: 6px solid #FFFFFF; margin: 0 auto; box-sizing: content-box; }
+#brand-slider #brand-slides .owl-controls { position: absolute; top: 50%; width: 100%; margin-top: -26px; }
+#brand-slider #brand-slides .owl-controls .owl-prev, #brand-slider #brand-slides .owl-controls .owl-next { width: 48px; height: 48px; background: #D7262C; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.3); color: #fff; font-size: 26px; text-align: center; position: absolute; top: 0; display: block; padding-top: 8px; -webkit-transition: top 0.15s; transition: top 0.15s; }
+#brand-slider #brand-slides .owl-controls .owl-prev:hover, #brand-slider #brand-slides .owl-controls .owl-next:hover { top: 4px; }
+#brand-slider #brand-slides .owl-controls .owl-prev { left: -110px; }
+#brand-slider #brand-slides .owl-controls .owl-next { right: -110px; }
+#brand-slider #brand-logo { position: absolute; bottom: 0px; width: 100%; height: 0; z-index: 15; }
+#brand-slider #brand-logo img { display: block; margin: 0 auto; }
+
 #footer { max-width: 900px; margin: 0 auto; padding: 22px 0; }
 #footer .left { float: left; line-height: 58px; font-size: 11px; color: #737373; }
 #footer .left .logo { float: left; margin-right: 12px; }
