@@ -596,7 +596,7 @@
     }
 
     .half { padding:60px 0;
-        &.gray { background:#EDEDED; }
+        &.gray { background:#EDEDED url('../images/share-top.png') no-repeat top center; }
         .wrap { max-width:1050px; margin:0 auto; }
         .content-main { width:percentage(420/1050); margin:23px percentage(85/1050) 0 percentage(65/1050);
             h4 { margin:0 0 13px; }
@@ -610,6 +610,30 @@
         &.text-right {
             .content-main { float:right; }
             img { float:left; }
+        }
+    }
+
+    #sort { background:url('../images/bg-innovative.jpg') top center; text-align:center; margin-bottom:72px;
+        h3 { padding:52px 0 20px; font:700 22px/25px Nexa; color:#FFFFFF; text-transform:uppercase; display:inline-block;}
+        ul {
+            li { padding:15px 50px 18px; background:#00A3E1; transform:skew(-19deg); display: inline-block; box-shadow:0 4px 7px rgba(0,0,0,0.3); margin:0 2px; position:relative; top:20px;
+                span { display: inline-block;transform:skew(19deg); font:13px/15px Nexa; text-transform:uppercase; font-weight:800; color:#fff; }
+            }
+        }
+    }
+
+    #toy-grid { max-width:990px; margin:0 auto;overflow:hidden;
+        ul { position:relative; left:-1px; font-size:0; line-height:0;
+            li { text-align:center; width:33.333%; display: inline-block; padding:percentage(27/990); border-left:1px solid #CFCFCF; border-bottom:1px solid #CFCFCF;
+                img { max-width:100%; margin-bottom:30px; }
+                p { font:700 18px/18px Nexa; color:#1E66A3; }
+            }
+        }
+    }
+
+    #pagination { text-align:center; padding:52px 0; max-width:990px; border-bottom:1px solid #CFCFCF; margin:0 auto;
+        a { padding:11px 22px 14px; background:#00A3E1; transform:skew(-19deg); display: inline-block; box-shadow:0 4px 7px rgba(0,0,0,0.3); margin:0;
+            span { display: inline-block;transform:skew(19deg); font:18px/23px Nexa; text-transform:uppercase; font-weight:600; color:#fff;  }
         }
     }
 
@@ -627,7 +651,7 @@
         }
     }
 
-    .wrap { width: 1100px; box-sizing: border-box; margin: 0 auto; max-width: 100%; padding: 0 20px; }
+    .wrap { max-width: 1100px; box-sizing: border-box; margin: 0 auto; padding: 0 20px; }
 
 
 
