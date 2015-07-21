@@ -595,6 +595,24 @@
         p { font-size:19px; line-height:26px; margin-bottom:45px; }
     }
 
+    .half { padding:60px 0;
+        &.gray { background:#EDEDED; }
+        .wrap { max-width:1050px; margin:0 auto; }
+        .content-main { width:percentage(420/1050); margin:23px percentage(85/1050) 0 percentage(65/1050);
+            h4 { margin:0 0 13px; }
+            p { font-size:18px; line-height:26px; }
+        }
+        img { width:percentage(480/1050); border:4px solid #fff; box-shadow:0 5px 30px rgba(0,0,0,0.25); }
+        &.text-left {
+            .content-main { float:left; }
+            img { float:right; }
+        }
+        &.text-right {
+            .content-main { float:right; }
+            img { float:left; }
+        }
+    }
+
     #footer { max-width:900px; margin:0 auto; padding:22px 0;
         .left { float:left; line-height:58px; font-size:11px; color:#737373;
             .logo { float:left; margin-right:12px;
