@@ -221,15 +221,17 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #header .header-wrap .logo-container .logo { position: relative; z-index: 10; }
 #header .header-wrap .logo-container .red { height: 83px; width: 9999px; position: absolute; right: 50px; top: 0; background-image: -webkit-linear-gradient(270deg, #D7262C 33%, #AF0208 100%); background-image: linear-gradient(-180deg, #D7262C 33%, #AF0208 100%); box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.3); z-index: 1; }
 
-#nav { float: right; margin-top: 28px; }
+#nav { float: right; margin-top: 28px; padding-right: 15px; }
 #nav > ul { font-size: 0; }
-#nav > ul > li { display: inline-block; }
+#nav > ul > li { display: inline-block; vertical-align: top; }
 #nav > ul > li > a { display: block; padding: 20px 24px 34px 26px; font: 800 14px/1 Nexa; color: #fff; text-transform: uppercase; -webkit-transform: skew(-24.5deg); -ms-transform: skew(-24.5deg); transform: skew(-24.5deg); position: relative; z-index: 20; }
 #nav > ul > li > a span { -webkit-transform: skew(24.5deg); -ms-transform: skew(24.5deg); transform: skew(24.5deg); display: block; }
 #nav > ul > li:hover a { background: #00A3E1; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.3); }
 #nav > ul > li.menu-item-has-children > a:after { content: '\25bc'; color: #5DBADD; font-size: 11px; position: absolute; bottom: 36px; right: 6px; display: block; -webkit-transform: skew(24.5deg); -ms-transform: skew(24.5deg); transform: skew(24.5deg); }
 #nav > ul > li ul { height: 0; overflow: hidden; background: #FFFFFF url(../images/bg-subnav.png) center 11px no-repeat; position: absolute; top: 84px; left: 0; width: 100%; z-index: 15; box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3); -webkit-transition: height 0.2s ease-out; transition: height 0.2s ease-out; }
 #nav > ul > li:hover ul { height: 380px; }
+#nav > ul > li.search img { width: 18px; height: 17px; }
+#nav > ul > li.search a { padding: 18px 18px 30px 16px; }
 
 #banner { height: 565px; width: 100%; }
 #banner.owl-carousel .owl-stage-outer { width: 100%; }
@@ -638,7 +640,9 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #share #instagram .shot.s3 { right: -400px; left: 400px; top: 34px; bottom: -34px; z-index: 15; }
   #share #instagram .shot.s4 { right: 195px; left: -195px; top: -49px; bottom: 49px; width: 245px; height: 245px; }
   #share #instagram .shot.s5 { left: 195px; right: -195px; top: -49px; bottom: 49px; width: 245px; height: 245px; }
-  #share #instagram .shot:hover { width: 270px !important; height: 270px !important; z-index: 100; } }
+  #share #instagram .shot:hover { width: 270px !important; height: 270px !important; z-index: 100; }
+  #brand-slider #brand-slides .owl-controls .owl-next { right: -50px; }
+  #brand-slider #brand-slides .owl-controls .owl-prev { left: -50px; } }
 @media screen and (max-width: 1080px) { #nav > ul > li > a { padding: 20px 22px 34px 24px; }
   #banner { height: 450px; }
   #banner .slide { height: 450px; }
@@ -670,8 +674,11 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #share #instagram .shot.s4 { right: 150px; left: -150px; top: -49px; bottom: 49px; width: 245px; height: 245px; }
   #share #instagram .shot.s5 { left: 150px; right: -150px; top: -49px; bottom: 49px; width: 245px; height: 245px; }
   #share #instagram .shot:hover { width: 225px !important; height: 225px !important; z-index: 100; }
-  #share .social { width: 45%; } }
-@media screen and (max-width: 960px) { #title { padding: 40px 20px !important; margin-bottom: 0px !important; }
+  #share .social { width: 45%; }
+  #brand-slider #brand-slides .owl-controls .owl-next { right: -10px; }
+  #brand-slider #brand-slides .owl-controls .owl-prev { left: -10px; } }
+@media screen and (max-width: 960px) { #nav > ul > li > a { padding: 20px 20px 34px 22px; font-size: 13px; line-height: 14px; }
+  #title { padding: 40px 20px !important; margin-bottom: 0px !important; }
   #title h2 { font-size: 16px; }
   #title h1 { font-size: 32px; }
   #title h3 { font-size: 26px; }
@@ -686,8 +693,16 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #faqs .faq .q:before { font-size: 35px; left: 12px; top: 12px; }
   #faqs .faq .a { padding: 0 0 8px 40px; }
   #faqs .faq .a p { font-size: 16px; line-height: 25px; } }
-@media screen and (max-width: 768px) { #header { height: 50px; }
-  #header .header-wrap { overflow: hidden; }
+@media screen and (max-width: 768px) { #nav { padding-right: 0; float: none; padding-top: 28px; margin-top: -42px; background: #fff; box-shadow: 0 10px 10px rgba(112, 112, 112, 0.3); }
+  #nav > ul > li { display: block; border-bottom: 1px solid #CFCFCF; }
+  #nav > ul > li > a { font-size: 14px; line-height: 59px; padding: 0 28px; -webkit-transform: none; -ms-transform: none; transform: none; font-size: 14px; color: #1E66A3; }
+  #nav > ul > li > a span { -webkit-transform: none; -ms-transform: none; transform: none; display: inline-block; }
+  #nav > ul > li:hover a { background: none; box-shadow: none; }
+  #nav > ul > li ul { position: relative; top: 0; background: url(../images/bg-subnav-m.png) repeat center top; }
+  #nav > ul > li.search { display: none; }
+  #nav > ul > li.menu-item-has-children > a:after { -webkit-transform: none; -ms-transform: none; transform: none; position: relative; bottom: auto; right: auto; display: inline-block; top: -1px; left: 5px; }
+  #header { height: 50px; }
+  #header .header-wrap { /* overflow:hidden; */ }
   #header .header-wrap .logo-container .logo img { width: 125px; }
   #header .header-wrap .logo-container .red { height: 50px; }
   #banner, #banner .slide { height: 350px; }
@@ -764,7 +779,7 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #faqs .faq .a p { font-size: 15px; line-height: 22px; }
   #footer { position: relative; padding-bottom: 50px; }
   #footer .left, #footer .right { width: 50%; }
-  #footer .left p { position: absolute; left: 20px; bottom: 22px; width: 100%; line-height: 1.2; } }
+  #footer .left p { position: absolute; left: 20px; bottom: 22px; width: auto; line-height: 1.2; } }
 @media screen and (max-width: 600px) { #banner, #banner .slide { height: 200px; }
   #brand-grid .brand { max-width: 205px; }
   #videos .video.large h3 { font-size: 20px; padding-right: 0; }
