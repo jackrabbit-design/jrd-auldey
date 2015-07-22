@@ -70,6 +70,9 @@ function _gallery(){
 }
 
 function _mobileNav(){
+    $('#nav-icon').on('click',function(){
+        $(this).toggleClass('x').siblings('#nav').toggleClass('x');
+    });
     $('#nav ul li.menu-item-has-children > a').on('click',function(){
         $(this).parents('li').toggleClass('x');
         return false;

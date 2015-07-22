@@ -200,34 +200,36 @@
     [data-icon]:before { font-family: "jack-social"; content: attr(data-icon); font-style: normal; font-weight: normal; font-variant: normal; text-transform: none !important; speak: none; display: inline-block; text-decoration: none; width: 1em; line-height: 1em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
     [class^="social-"]:before,
     [class*=" social-"]:before { font-family: "jack-social"; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none !important; speak: none; display: inline-block; text-decoration: none; width: 1em; line-height: 1em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-    .social-email:before { content: "a"; }
-    .social-email-round:before { content: "A"; }
-    .social-facebook:before { content: "f"; }
-    .social-facebook-round:before { content: "F"; }
-    .social-flickr:before { content: "c"; }
-    .social-flickr-round:before { content: "C"; }
-    .social-googleplus:before { content: "g"; }
-    .social-googleplus-round:before { content: "G"; }
-    .social-instagram:before { content: "i"; }
-    .social-instagram-round:before { content: "I"; }
-    .social-linkedin:before { content: "l"; }
-    .social-linkedin-round:before { content: "L"; }
-    .social-pinterest:before { content: "p"; }
-    .social-pinterest-round:before { content: "P"; }
-    .social-rss:before { content: "r"; }
-    .social-rss-round:before { content: "R"; }
-    .social-sharethis:before { content: "s"; }
-    .social-sharethis-round:before { content: "S"; }
-    .social-twitter:before { content: "t"; }
-    .social-twitter-round:before { content: "T"; }
-    .social-vimeo:before { content: "v"; }
-    .social-vimeo-round:before { content: "V"; }
-    .social-yelp:before { content: "x"; }
-    .social-yelp-round:before { content: "X"; }
-    .social-youtube:before { content: "y"; }
-    .social-youtube-round:before { content: "Y"; }
-    .social-youtube2:before { content: "u"; }
-    .social-youtube2-round:before { content: "U"; }
+    .social {
+        &-email:before { content: "a"; }
+        &-email-round:before { content: "A"; }
+        &-facebook:before { content: "f"; }
+        &-facebook-round:before { content: "F"; }
+        &-flickr:before { content: "c"; }
+        &-flickr-round:before { content: "C"; }
+        &-googleplus:before { content: "g"; }
+        &-googleplus-round:before { content: "G"; }
+        &-instagram:before { content: "i"; }
+        &-instagram-round:before { content: "I"; }
+        &-linkedin:before { content: "l"; }
+        &-linkedin-round:before { content: "L"; }
+        &-pinterest:before { content: "p"; }
+        &-pinterest-round:before { content: "P"; }
+        &-rss:before { content: "r"; }
+        &-rss-round:before { content: "R"; }
+        &-sharethis:before { content: "s"; }
+        &-sharethis-round:before { content: "S"; }
+        &-twitter:before { content: "t"; }
+        &-twitter-round:before { content: "T"; }
+        &-vimeo:before { content: "v"; }
+        &-vimeo-round:before { content: "V"; }
+        &-yelp:before { content: "x"; }
+        &-yelp-round:before { content: "X"; }
+        &-youtube:before { content: "y"; }
+        &-youtube-round:before { content: "Y"; }
+        &-youtube2:before { content: "u"; }
+        &-youtube2-round:before { content: "U"; }
+    }
 
 /* != DEFAULT WORDPRESS STYLES = USE AS NEEDED = .wp-caption = .wp-caption-dd = .wpGallery = .shutter = .shutterset ==== */
 
@@ -258,6 +260,8 @@
             }
         }
     }
+
+    #nav-icon { display:none; }
 
     #nav { float:right; margin-top:28px; padding-right:15px;
         > ul { font-size:0;
@@ -916,7 +920,17 @@
 }
 
 @media screen and (max-width:768px){
-    #nav { padding-right:0; float:none; padding-top:28px; margin-top:-42px; background:#fff; box-shadow:0 10px 10px rgba(112,112,112,0.3);
+    #nav-icon { width:62px; height:50px; display:block; position:absolute; top:0; right:0;
+        span {
+            &, &:before, &:after { width:22px; height:3px; display:block; background:#fff; position:absolute; right:20px; content:''}
+            & { top:22px; }
+            &:before { top:-6px; right:0; }
+            &:after { top:6px; right:0; }
+        }
+        &.x { background:#053A68; }
+    }
+    #nav { padding-right:0; float:none; padding-top:28px; margin-top:-42px; display:none; background:#fff; box-shadow:0 10px 10px rgba(112,112,112,0.3);
+        &.x { display:block; }
         > ul {
             > li { display:block; border-bottom:1px solid #CFCFCF;
                 >a { font-size:14px; line-height:59px; padding:0 28px; transform:none; font-size:14px; color:#1E66A3;
