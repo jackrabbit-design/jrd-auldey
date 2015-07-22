@@ -893,6 +893,16 @@
             li { padding:10px 25px 12px; }
         }
     }
+    #faqs {
+        .faq {
+            .q { font-size:20px; padding:20px 0 20px 40px;
+                &:before { font-size:35px; left:12px; top:12px; }
+            }
+            .a { padding:0 0 8px 40px;
+                p { font-size:16px; line-height:25px; }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px){
@@ -995,7 +1005,27 @@
     }
     .half { padding:30px 0;
         .content-main { width:100%; float:none !important; margin:20px 0; }
-        img { float:none !important; display:block; margin:0 auto; max-width:100%; }
+        img { float:none !important; display:block; margin:0 auto; width:480px; max-width:100%; }
+    }
+    #pagination { padding:30px 0;
+        a { padding:8px 12px 10px;
+            span { font-size:14px; line-height:16px; }
+        }
+    }
+    #brand-slider {
+        #brand-logo {
+            img { max-width:100%; }
+        }
+    }
+    #faqs {
+        .faq {
+            .q { font-size:17px; padding:12px 0 12px 30px;
+                &:before { top:5px; left:6px; font-size:32px; font-weight:400; }
+            }
+            .a { padding:6px 20px 12px 30px;
+                p { font-size:15px; line-height:22px; }
+            }
+        }
     }
 }
 
@@ -1066,4 +1096,10 @@
             p { font-size:15px; }
         }
     }
+    #brand-slider { padding-bottom:10px;
+        #brand-logo { position:relative; height:auto;
+            img {  margin:0 auto; max-width:80%; margin:20px auto !important; display:block; }
+        }
+    }
+    .full { padding:40px 0 40% !important; }
 }

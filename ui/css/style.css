@@ -680,7 +680,11 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   .callout p { font-size: 16px; line-height: 23px; }
   #brand-slider { height: auto; padding: 40px 20px; }
   #brand-slider #brand-slides { width: 100%; height: auto; }
-  #sort ul li { padding: 10px 25px 12px; } }
+  #sort ul li { padding: 10px 25px 12px; }
+  #faqs .faq .q { font-size: 20px; padding: 20px 0 20px 40px; }
+  #faqs .faq .q:before { font-size: 35px; left: 12px; top: 12px; }
+  #faqs .faq .a { padding: 0 0 8px 40px; }
+  #faqs .faq .a p { font-size: 16px; line-height: 25px; } }
 @media screen and (max-width: 768px) { #header { height: 50px; }
   #header .header-wrap { overflow: hidden; }
   #header .header-wrap .logo-container .logo img { width: 125px; }
@@ -748,7 +752,15 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #purchase .stores .store { display: block; height: auto; padding: 10px 0; }
   .half { padding: 30px 0; }
   .half .content-main { width: 100%; float: none !important; margin: 20px 0; }
-  .half img { float: none !important; display: block; margin: 0 auto; max-width: 100%; } }
+  .half img { float: none !important; display: block; margin: 0 auto; width: 480px; max-width: 100%; }
+  #pagination { padding: 30px 0; }
+  #pagination a { padding: 8px 12px 10px; }
+  #pagination a span { font-size: 14px; line-height: 16px; }
+  #brand-slider #brand-logo img { max-width: 100%; }
+  #faqs .faq .q { font-size: 17px; padding: 12px 0 12px 30px; }
+  #faqs .faq .q:before { top: 5px; left: 6px; font-size: 32px; font-weight: 400; }
+  #faqs .faq .a { padding: 6px 20px 12px 30px; }
+  #faqs .faq .a p { font-size: 15px; line-height: 22px; } }
 @media screen and (max-width: 600px) { #banner, #banner .slide { height: 200px; }
   #brand-grid .brand { max-width: 205px; }
   #videos .video.large h3 { font-size: 20px; padding-right: 0; }
@@ -782,4 +794,8 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #sort ul li { margin-bottom: 7px; top: 0; padding: 8px 12px 10px; }
   #toy-grid ul li { width: 50%; padding: 15px; }
   #toy-grid ul li img { margin-bottom: 15px; }
-  #toy-grid ul li p { font-size: 15px; } }
+  #toy-grid ul li p { font-size: 15px; }
+  #brand-slider { padding-bottom: 10px; }
+  #brand-slider #brand-logo { position: relative; height: auto; }
+  #brand-slider #brand-logo img { margin: 0 auto; max-width: 80%; margin: 20px auto !important; display: block; }
+  .full { padding: 40px 0 40% !important; } }
