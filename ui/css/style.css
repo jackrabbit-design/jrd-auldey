@@ -380,7 +380,7 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 .callout.manual { border-bottom: none; }
 .callout.manual h3 { text-transform: none; }
 
-.main { max-width: 980px; margin: 60px auto; }
+.main { max-width: 1020px; padding: 0 20px; margin: 60px auto; }
 .main .content-main { width: 55.10204%; float: left; }
 .main .sidebar { width: 41.83673%; float: right; }
 .main .sidebar img { max-width: 100%; }
@@ -668,6 +668,12 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #share #instagram .shot.s5 { left: 150px; right: -150px; top: -49px; bottom: 49px; width: 245px; height: 245px; }
   #share #instagram .shot:hover { width: 225px !important; height: 225px !important; z-index: 100; }
   #share .social { width: 45%; } }
+@media screen and (max-width: 960px) { #title { padding: 40px 20px !important; margin-bottom: 0px !important; }
+  #title h2 { font-size: 16px; }
+  #title h1 { font-size: 32px; }
+  #title img { max-width: 100%; position: relative; left: auto; bottom: auto !important; margin: 20px 0 0 !important; }
+  .callout h3 { font-size: 24px; margin-bottom: 16px; }
+  .callout p { font-size: 16px; line-height: 23px; } }
 @media screen and (max-width: 768px) { #header { height: 50px; }
   #header .header-wrap { overflow: hidden; }
   #header .header-wrap .logo-container .logo img { width: 125px; }
@@ -703,7 +709,16 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #share #instagram .shot.s5 { display: none; }
   #share #instagram .shot:hover { width: 47% !important; max-width: 300px  !important; height: auto !important; }
   #share .social { display: block; width: 275px; margin: 20px auto 30px !important; }
-  #share .social p { font-size: 16px; line-height: 20px; margin-bottom: 10px; } }
+  #share .social p { font-size: 16px; line-height: 20px; margin-bottom: 10px; }
+  .content-main h2 { font-size: 26px; line-height: 29px; }
+  .content-main h3 { font-size: 22px; }
+  .content-main h4 { font-size: 15px; }
+  .content-main p { font-size: 15px; line-height: 22px; }
+  .content-main ul { padding: 10px 0 25px; }
+  .content-main ul li { padding-left: 14px; font-size: 15px; line-height: 16px; }
+  .main { margin: 30px auto; }
+  .main .content-main, .main .sidebar { width: 100%; float: none; }
+  .main .sidebar img { display: block; margin: 0 auto; } }
 @media screen and (max-width: 600px) { #banner, #banner .slide { height: 200px; }
   #brand-grid .brand { max-width: 205px; }
   #videos .video.large h3 { font-size: 20px; padding-right: 0; }
