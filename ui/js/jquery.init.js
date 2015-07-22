@@ -69,6 +69,13 @@ function _gallery(){
     });
 }
 
+function _mobileNav(){
+    $('#nav ul li.menu-item-has-children > a').on('click',function(){
+        $(this).parents('li').toggleClass('x');
+        return false;
+    });
+}
+
 jQuery(function(){
 
     _brandGrid();
@@ -77,5 +84,6 @@ jQuery(function(){
     _brandSlider();
     _faq();
     _gallery();
+    _mobileNav();
 
 });
