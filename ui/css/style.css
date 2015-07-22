@@ -492,6 +492,15 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 #manual-results #results li img { float: left; margin-right: 22px; }
 #manual-results #results li p { font: 700 22px/29px Nexa; color: #1E66A3; padding-top: 20px; }
 #manual-results #results li p small { color: #00A3E1; text-transform: uppercase; font-size: 15px; display: block; }
+#manual-results #results.videos li { padding: 31px 4.08163%; }
+#manual-results #results.videos li a { padding: 0; }
+#manual-results #results.videos li a img { max-width: 100%; height: auto; display: block; margin: 0 auto; float: none; }
+#manual-results #results.videos li a:before, #manual-results #results.videos li a:after { display: none; }
+#manual-results #results.videos li a:hover { box-shadow: none; }
+#manual-results #results.videos li a .play { width: 102px; height: 102px; display: block; background: url(../images/play-arrow.png) 0px top; top: 50%; left: 50%; margin-top: -51px; margin-left: -51px; position: absolute; -webkit-transform: scale(0.65); -ms-transform: scale(0.65); transform: scale(0.65); }
+#manual-results #results.videos li a:hover .play { background-position: -102px top; }
+#manual-results #results.videos li h3 { font-size: 22px; color: #1E66A3; font-weight: 500; margin-top: 24px; }
+#manual-results #results.videos li p { font-size: 15px; color: #00A3E1; font-weight: 700; padding-top: 0px; }
 
 #manual-brands { height: 110px; text-align: center; }
 #manual-brands a { display: inline-block; line-height: 110px; vertical-align: middle; }
@@ -765,7 +774,8 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #faqs .faq .a p { font-size: 15px; line-height: 22px; }
   #footer { position: relative; padding-bottom: 50px; }
   #footer .left, #footer .right { width: 50%; }
-  #footer .left p { position: absolute; left: 20px; bottom: 22px; width: auto; line-height: 1.2; } }
+  #footer .left p { position: absolute; left: 20px; bottom: 22px; width: auto; line-height: 1.2; }
+  #manual-results #results.videos li { width: 100%; text-align: center; } }
 @media screen and (max-width: 600px) { #banner, #banner .slide { height: 200px; }
   #brand-grid .brand { max-width: 205px; }
   #videos .video.large h3 { font-size: 20px; padding-right: 0; }

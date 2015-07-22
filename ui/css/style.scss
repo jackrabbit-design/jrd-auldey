@@ -686,8 +686,22 @@
                     small { color:#00A3E1; text-transform:uppercase; font-size:15px; display:block; }
                 }
             }
+            &.videos {
+                li { padding: 31px percentage(40/980);;
+                    a { padding:0;
+                        img { max-width:100%; height:auto; display:block; margin:0 auto; float:none; }
+                        &:before, &:after { display:none; }
+                        &:hover { box-shadow:none; }
+                        .play { width:102px; height:102px; display:block; background:url(../images/play-arrow.png) 0px top; top:50%; left:50%; margin-top:-51px; margin-left:-51px; position: absolute; transform:scale(0.65);}
+                        &:hover .play { background-position:-102px top; }
+                    }
+                    h3 { font-size:22px; color:#1E66A3; font-weight:500; margin-top:24px; }
+                    p { font-size:15px; color:#00A3E1; font-weight:700; padding-top:0px; }
+                }
+            }
         }
     }
+
 
     #manual-brands { height:110px; text-align:center;
         a { display:inline-block; line-height:110px; vertical-align:middle;
@@ -1072,6 +1086,9 @@
     #footer { position:relative; padding-bottom:50px;
         .left, .right { width:50%; }
         .left p { position:absolute; left:20px; bottom:22px; width:auto; line-height:1.2; }
+    }
+    #manual-results #results.videos {
+        li { width:100%; text-align:center; }
     }
 }
 
