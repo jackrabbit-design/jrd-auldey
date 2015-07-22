@@ -513,9 +513,10 @@
         }
     }
 
-    #product { max-width:980px; margin:0 auto;
+    #product { max-width:1020px; margin:0 auto; padding:0 20px;
         .content-main { width:40.8%; float:right; padding:40px 0; }
         .gallery { width:53.5%; float:left; padding:40px 0;
+            >img { max-width:100%; }
             .gallery-small { margin-top:65px;
                 span { float:left; display:block; width:78px; height:78px; background-repeat:no-repeat; box-shadow:inset 0 0 0 1px #CFCFCF;
                     &.x { box-shadow:inset 0 0 0 3px #00A3E1; }
@@ -558,7 +559,7 @@
         .toys { font-size:0; margin-bottom:60px;
             .toy { width:33%; padding:30px; display: inline-block; vertical-align: top;
                 &+.toy { border-left:1px solid #D8D8D8; }
-                img { display:block; margin:0 auto; margin-bottom:50px; }
+                img { display:block; margin:0 auto; margin-bottom:50px; max-width:100%; }
                 h4 { font:700 18px/1 Nexa; color:#1E66A3; }
             }
         }
@@ -567,10 +568,12 @@
     #purchase { max-width:980px; margin:0 auto; text-align:center; padding:55px 0; border-bottom:1px solid #CFCFCF;
         h4 { font:26px/1 Nexa; color:#1E66A3; margin-bottom:50px; }
         .stores { display:table; margin:0 auto; }
-        .store { display:table-cell; height:125px; vertical-align: middle; padding:0 45px; }
+        .store { display:table-cell; height:125px; vertical-align: middle; padding:0 45px;
+            img { max-width:100%; }
+        }
     }
 
-    #contact { max-width:725px; margin:0 auto; padding:46px 0 60px; font-size:0; border-bottom:1px solid #CFCFCF;
+    #contact { max-width:765px; margin:0 auto; padding:46px 20px 60px; font-size:0; border-bottom:1px solid #CFCFCF;
         li { display:inline-block; width:100%; }
         li.sm { width:48%; }
         li.sm+li.sm { margin-left:4%; }
@@ -874,11 +877,21 @@
     #title { padding:40px 20px !important; margin-bottom:0px !important;
         h2 { font-size:16px; }
         h1 { font-size:32px; }
+        h3 { font-size:26px; }
+        p { font-size:16px;line-height:24px; }
         img { max-width:100%; position:relative; left:auto; bottom:auto !important; margin:20px 0 0 !important; }
     }
     .callout {
         h3 { font-size:24px; margin-bottom:16px; }
         p { font-size:16px; line-height:23px; }
+    }
+    #brand-slider { height:auto; padding:40px 20px;
+        #brand-slides { width:100%; height:auto; }
+    }
+    #sort {
+        ul {
+            li { padding:10px 25px 12px; }
+        }
     }
 }
 
@@ -900,7 +913,7 @@
             &:hover .square { border-color:#00A3E1; }
         }
     }
-    #videos { padding:0 20px;
+    #videos, #demo { padding:0 20px;
         > h3 { font-size:20px; }
         > h2 { font-size:45px;
             &:before, &:after { width:30px; }
@@ -916,6 +929,23 @@
                 img { width:100%; }
                 .light { width:110%; margin-left:-50%; }
             }
+            .play { transform:scale(0.5); }
+        }
+    }
+    #demo, #more-toys { padding:30px 20px;
+        h3 { font-size:16px; }
+        h2 { font-size:32px;
+            &:before { top:14px; left:-40px; width:30px; }
+            &:after { top:14px; right:-40px; width:30px; }
+        }
+    }
+    #demo {
+        .video { width:100%; height:auto; margin-bottom:30px;
+            .text { padding:8px 12px; height:55px; }
+            h4 { font-size:12px; }
+            h3 { font-size:16px; padding-right:0 }
+            img { width:100%; height:auto; }
+            .light { height:100px; }
         }
     }
     #innovative {
@@ -948,6 +978,24 @@
     .main { margin:30px auto;
         .content-main, .sidebar { width:100%; float:none; }
         .sidebar img { display:block; margin:0 auto; }
+    }
+    #product {
+        .content-main { width:100%; float:none; }
+        .gallery { width:100%; max-width:525px; margin:0 auto; float:none; }
+    }
+    .btn, button[type=submit] { padding:10px 20px; }
+    #more-toys .toys { margin-bottom:30px;
+        .toy h4 { font-size:15px; }
+    }
+    #purchase {
+        h4 { font-size:20px; margin-bottom:25px; }
+        .stores { display:block;
+            .store { display:block; height:auto; padding:10px 0; }
+        }
+    }
+    .half { padding:30px 0;
+        .content-main { width:100%; float:none !important; margin:20px 0; }
+        img { float:none !important; display:block; margin:0 auto; max-width:100%; }
     }
 }
 
@@ -998,6 +1046,24 @@
         .bottom {
             .text { font-size:12px; padding:6px; }
             .bg { bottom:-30px; }
+        }
+    }
+    #contact {
+        li.sm { width:100%; margin-left:0 !important; }
+    }
+    form ul li label { font-size:13px; }
+    input[type="text"], input[type="password"], input[type="url"], input[type="email"] { height:34px; padding:0 8px; }
+    textarea { padding:8px; }
+    #sort {
+        h3 { padding-top:30px; font-size:18px; }
+        ul { padding-bottom:20px;
+            li { margin-bottom:7px; top:0; padding:8px 12px 10px; }
+        }
+    }
+    #toy-grid {
+        ul li { width:50%; padding:15px;
+            img { margin-bottom:15px; }
+            p { font-size:15px; }
         }
     }
 }
