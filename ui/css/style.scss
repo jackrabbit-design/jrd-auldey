@@ -695,14 +695,15 @@
     .select-menu select::-ms-expand { display: none; }
     .select-menu select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #707070; }
 
-    #footer { max-width:900px; margin:0 auto; padding:22px 0;
-        .left { float:left; line-height:58px; font-size:11px; color:#737373;
+    #footer { max-width:940px; margin:0 auto; padding:22px 20px;
+        .left { float:left; line-height:58px; font-size:11px; color:#737373; width:70%;
             .logo { float:left; margin-right:12px;
                 img { display:block; }
             }
-            a ~ a { margin-left:8px; color:#737373; }
+            a { color:#737373;  }
+            a ~ a { margin-left:8px; }
         }
-        .right { float:right; line-height:58px;
+        .right { float:right; line-height:58px; width:30%; text-align:right;
             a { font-size:42px; color:#B3B3B3;
                 &:hover { color:#00A3E1; }
             }
@@ -1026,6 +1027,10 @@
                 p { font-size:15px; line-height:22px; }
             }
         }
+    }
+    #footer { position:relative; padding-bottom:50px;
+        .left, .right { width:50%; }
+        .left p { position:absolute; left:20px; bottom:22px; width:100%; line-height:1.2; }
     }
 }
 

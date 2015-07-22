@@ -531,12 +531,13 @@ h6 { font: normal 24px/1.2 ProximaNova, sans-serif; color: #f00; }
 
 .select-menu select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #707070; }
 
-#footer { max-width: 900px; margin: 0 auto; padding: 22px 0; }
-#footer .left { float: left; line-height: 58px; font-size: 11px; color: #737373; }
+#footer { max-width: 940px; margin: 0 auto; padding: 22px 20px; }
+#footer .left { float: left; line-height: 58px; font-size: 11px; color: #737373; width: 70%; }
 #footer .left .logo { float: left; margin-right: 12px; }
 #footer .left .logo img { display: block; }
-#footer .left a ~ a { margin-left: 8px; color: #737373; }
-#footer .right { float: right; line-height: 58px; }
+#footer .left a { color: #737373; }
+#footer .left a ~ a { margin-left: 8px; }
+#footer .right { float: right; line-height: 58px; width: 30%; text-align: right; }
 #footer .right a { font-size: 42px; color: #B3B3B3; }
 #footer .right a:hover { color: #00A3E1; }
 
@@ -760,7 +761,10 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
   #faqs .faq .q { font-size: 17px; padding: 12px 0 12px 30px; }
   #faqs .faq .q:before { top: 5px; left: 6px; font-size: 32px; font-weight: 400; }
   #faqs .faq .a { padding: 6px 20px 12px 30px; }
-  #faqs .faq .a p { font-size: 15px; line-height: 22px; } }
+  #faqs .faq .a p { font-size: 15px; line-height: 22px; }
+  #footer { position: relative; padding-bottom: 50px; }
+  #footer .left, #footer .right { width: 50%; }
+  #footer .left p { position: absolute; left: 20px; bottom: 22px; width: 100%; line-height: 1.2; } }
 @media screen and (max-width: 600px) { #banner, #banner .slide { height: 200px; }
   #brand-grid .brand { max-width: 205px; }
   #videos .video.large h3 { font-size: 20px; padding-right: 0; }
