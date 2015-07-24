@@ -170,6 +170,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/ui\/images\/bg-subnav-m.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20663,
+		"inputAbbreviatedPath": "\/ui\/images\/bg-subnav-m.png",
+		"outputAbbreviatedPath": "\/ui\/images\/bg-subnav-m.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/ui\/images\/bg-subnav.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -243,6 +254,17 @@
 		"initialSize": 33771,
 		"inputAbbreviatedPath": "\/ui\/images\/brandgrid-wr.jpg",
 		"outputAbbreviatedPath": "\/ui\/images\/brandgrid-wr.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/ui\/images\/ico-search.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 906,
+		"inputAbbreviatedPath": "\/ui\/images\/ico-search.png",
+		"outputAbbreviatedPath": "\/ui\/images\/ico-search.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -461,6 +483,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/unsupported.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/videos.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/videos.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
